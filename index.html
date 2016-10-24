@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="lib/mui.min.js"></script>
+    <script src="lib/chart.bundle.min.js"></script>
+    <script src="../lib/jquery-1.9.0.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Social Sentiments</title>
+    <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"https:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("4163785638");
+  </script>
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pljjkghcpbmleiggilgchhhomaihkdba">
+  </head>
+  <body>
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table width="100%">
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title">Social Sentiments</td>
+            <td align="right">
+              <ul class="mui-list--inline mui--text-body2">
+                <li><a href="#why">Why?</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="">
+      <div class="mui--appbar-height"></div>
+      <br/>
+
+      <div class="mui-row">
+
+        <div class="mui-col-md-12 mui--text-center">
+          <br/><br/><br/><br/><br/><br/><br/>
+          <div class="mui--text-display2">Social Sentiments</div>
+          <br/>
+          <div class="mui--text-title">
+            A Chrome extension that informs you of how much positive and negative Facebook posts you consume.
+          </div>
+          <br/>
+          <button class="mui-btn mui-btn--primary mui-btn--raised" onclick="chrome.webstore.install()" id="install-button">Add to Chrome</button>
+          <br/>or <a href="https://chrome.google.com/webstore/detail/social-sentiments/pljjkghcpbmleiggilgchhhomaihkdba">go to chrome web store</a>
+        </div>
+        <div class="mui-col-md-5 mui-col-md-offset-4">
+          <br/>
+          <img class="mui--pull-right width100" src="img/webgraphic1.png" />
+        </div>
+    </div>
+    <div id="why" class="mui-divider"></div>
+
+    <div class="mui-row">
+
+      <div class="mui-col-md-12 mui--text-center">
+        <br/><br/><br/><br/><br/><br/><br/>
+        <div class="mui--text-display1">Facebook Fuels Negativity</div>
+        <br/>
+        <div class="mui--text-title">
+          The site can easily put you in bad mood as the negative posts on Facebook are <a href="https://www.bustle.com/articles/18073-facebook-can-put-you-in-a-bad-mood-how-negativity-on-social-networks-is-contagious" target="_blank">contagious</a>.
+          <br/>Thankfully, the opposite can be said about positive posts: see an upbeat update, <br/>and you're more likely to feel like smiling yourself.
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/>
+      </div>
+  </div>
+  <div class="mui-divider"></div>
+
+    <div class="mui-row">
+
+        <div class="mui-col-md-5 mui-col-md-offset-1">
+          <br/><br/><br/><br/><br/><br/><br/>
+          <div class="mui--text-display1">Bigger Picture</div>
+          <br/>
+          <div class="mui--text-title">
+            See an overview to tell you how much negativity surrounds you.
+          </div>
+        </div>
+        <div class="mui-col-md-5">
+          <br/>
+          <img class="mui--pull-right width100 border" src="img/webgraphic2.png" />
+        </div>
+    </div>
+    <div class="mui-divider"></div>
+    <div class="mui-row">
+
+        <div class="mui-col-md-5 mui-col-md-offset-1">
+          <br/>
+          <img class="mui--pull-right width100 border" src="img/webgraphic3.png" />
+        </div>
+
+        <div class="mui-col-md-5 ">
+          <br/><br/><br/><br/><br/><br/><br/>
+          <div class="mui--text-display1">Timeline</div>
+          <br/>
+          <div class="mui--text-title">
+            A day by day breakdown of the posts you were presented.
+          </div>
+        </div>
+
+    </div>
+
+    <div class="mui-divider"></div>
+      <div class="mui-row">
+
+        <div class="mui-col-md-12 mui--text-center">
+          <br/><br/><br/><br/><br/><br/><br/>
+          <div id="privacy" class="mui--text-display1">Privacy</div>
+          <br/>
+          <div class="mui--text-title">
+            All the sentiment analysis is done locally using the awesome <a target="_blank" href="https://github.com/thisandagain/sentiment">sentiment</a> library.
+            <br/>No personally identifiable data is sent to any server.
+          </div>
+          <br/><br/><br/><br/><br/><br/><br/>
+        </div>
+    </div>
+
+    <div class="mui-divider"></div>
+    <div class="mui-row">
+
+      <div class="mui-col-md-12 mui--text-center">
+        <br/><br/><br/>
+
+        <button class="mui-btn mui-btn--primary mui-btn--raised" onclick="chrome.webstore.install()" id="install-button">Add to Chrome</button>
+        <script>
+        if (chrome.app.isInstalled) {
+          document.getElementById('install-button').style.display = 'none';
+        }
+        </script>
+        <br/><br/><br/>
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+    </div>
+    <footer>
+      <div class="mui-container mui--text-center">
+        Made with ♥ by <a href="http://asadmemon.com">Asad Memon</a>.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="overview.js"></script>
+    <script src="timeline.js"></script>
+  </body>
+</html>
